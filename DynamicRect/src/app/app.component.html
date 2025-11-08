@@ -1,0 +1,23 @@
+<div class="controls">
+  <p class="control">
+    <label for="width">Width</label>
+    <input
+      id="width"
+      name="width"
+      type="number"
+      step="1.0"
+      [(ngModel)]="rectSize.width"
+    />
+  </p>
+  <p class="control">
+    <label for="height">Height</label>
+    <input
+      id="height"
+      name="height"
+      type="number"
+      [(ngModel)]="rectSize.height"
+    />
+  </p>
+</div>
+
+<app-rect [(size)]="rectSize" />
