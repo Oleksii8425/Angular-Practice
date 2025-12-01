@@ -1,7 +1,0 @@
-Services can be provided using:
-    1) @Injectable
-    2) providers: [] inside bootstrapApplication method - service included in the initial bundle
-
-The first approach is preferable, since the services provided using @Injectable,
-are loaded only when they are needed in the application (lazy loading) which results
-in more optimized code bundles.
